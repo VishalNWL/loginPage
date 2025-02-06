@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCD Login Page</title>
+    <link rel="stylesheet" href="style.login.css">
+    <link rel="shortcut icon" href="https://jaiyankargupta.github.io/OCD-Website/public/ocdlogo.png" type="image/x-icon">
+</head>
+<body>
+      <div id="login" class="flex">
+        <form id="login_form" >
+           <h1 id="loginheading">Register yourself</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" class="focus" placeholder="Enter Your Name">
+
+            <label for="email">Email</label>
+            <input type="email"id="email" class="focus" placeholder="Enter Your Email">
+            
+            <label for="phone">Contact No.</label>
+            <input type="tel"id="phone" pattern="[0-9]{10}"  class="focus" placeholder="Enter Your Contact No.">
+
+            <label for="branch">Branch</label>
+            <select id="branch" class="focus">
+                <option>Electrical</option>
+                <option>Robotics & Automation</option>
+                <option>CSE</option>
+                <option>AI ML</option>
+                <option>Civil</option>
+                <option>Mechanical</option>
+                <option>SET</option>
+            </select>
+
+            <label for="branch" class="focus">Year</label>
+            <select id="year">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="rightside">
+        <header>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+        </header>
+        <section class="flex">
+           <span class="welcometxt">Welcome to</span>
+           <span class="welcometxt">a vibrant developers community!</span>
+           <h2> where developers collaborate, innovate, and grow together</h2>
+        </section>
+      </div>
+</body>
+</html>

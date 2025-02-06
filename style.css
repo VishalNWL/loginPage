@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login{
+    height: 100vh;
+    width:40vw;
+    background-color:#02020e;
+}
+
+#loginheading{
+    margin-bottom: 20px;
+}
+
+#login form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.focus:focus{
+    outline: none;
+}
+
+input{
+    padding:7px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+label{
+    margin-top:10px;
+    font-size: 1em;
+}
+
+select{
+    padding:7px;
+    margin-top:5px;
+    font-size: 1em;
+    margin-bottom:5px;
+}
+
+button{
+    padding:7px;
+    margin-top:20px;
+    margin-bottom:5px;
+    background-color: #1c2231;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius:3px;
+    
+    &:hover{
+        background-color: #181e2e;
+    }
+    &:active{
+        background-color: #1c2231;        
+    }
+}
+
+#rightside{
+    height: 100vh;
+    width:60vw;
+    background-color:#1b202c;
+}
+
+header{
+  display: flex;
+  justify-content: end;
+  padding-right: 100px;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size:1.25rem;
+    position: relative;
+}
+
+header a::after{
+    content:"";
+    position:absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height:2px;
+    border-bottom: 2px solid white;
+    transform: scale(0);
+    transition: transform 0.1s ease-in-out;
+
+}
+
+header a:hover::after{
+    transform: scale(1);
+}
+section{
+    height:95vh;
+    flex-direction: column;
+    color:#a5bdf5;
+}
+
+.welcometxt{
+    font-size:2.5rem;
+    font-weight:bold;
+}
+
+section h2{
+    margin-top:20px;
+    font-size:1em;
+    color:#6d7faa;
+}
